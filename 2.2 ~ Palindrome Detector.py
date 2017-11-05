@@ -1,6 +1,7 @@
 #Made by Marika Colby (12.10)
 
 def is_palindrome(text):
+    text = text.lower()
     if str(text) == str(text)[::-1]:
         return True
     return False
@@ -13,7 +14,7 @@ def StringInput(question):
     return output
 
 while True:
-    text = StringInput("\nWhat string would you like to test as a palindrome?\n  > ")
+    text = StringInput("\nWhat string would you like to test as a palindrome?\n  > ").lower()
     if is_palindrome(text):
         print("\nThe string '%s' is a palindrome!" % (text))
     else:
