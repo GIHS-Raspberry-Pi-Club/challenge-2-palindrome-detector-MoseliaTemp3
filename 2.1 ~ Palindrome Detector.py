@@ -3,7 +3,6 @@
 text = "kayak"
 
 def is_palindrome(text):
-    text = text.lower()
     if str(text) == str(text)[::-1]:
         return True
     return False
